@@ -5,5 +5,9 @@ compiler:
     remappings:
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
 dotenv: .env
+networks:
+  polygon-test:
+    matic_usd_price_feed: '0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada'
+    verify: True
 wallets:
   from_key: ${PRIVATE_KEY}
